@@ -85,6 +85,10 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  environment.sessionVariables = {
+    FLAKE = "/home/alchemist/snowflake/";
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -129,6 +133,7 @@
     wireplumber
     lxappearance
     nh
+    vlc
   ];
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
