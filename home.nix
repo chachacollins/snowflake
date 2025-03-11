@@ -52,7 +52,7 @@
   #  /etc/profiles/per-user/alchemist/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    XKBOPTIONS = "caps:escape";
   };
 
   # Let Home Manager install and manage itself.
@@ -63,8 +63,7 @@
     userEmail = "collinschacha@hotmail.com";
     userName = "chachacollins";
     extraConfig.init.defaultBranch = "main";
-    #    [credential]
-    # helper = store
     extraConfig.credential.helper = "store";
   };
+
 }

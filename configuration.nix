@@ -125,6 +125,7 @@
     flameshot
     ly
     gtk3
+    wireplumber
   ];
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
