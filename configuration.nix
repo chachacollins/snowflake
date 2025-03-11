@@ -134,6 +134,7 @@
     lxappearance
     nh
     vlc
+    setxbkmap
   ];
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
