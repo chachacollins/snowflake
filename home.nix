@@ -65,5 +65,11 @@
     extraConfig.init.defaultBranch = "main";
     extraConfig.credential.helper = "store";
   };
-
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Graphite";
+      package = pkgs.andromeda-gtk-theme;
+    };
+  };
 }
