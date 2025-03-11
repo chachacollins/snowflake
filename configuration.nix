@@ -40,6 +40,7 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = false;
   services.xserver.desktopManager.gnome.enable = false;
+  programs.dconf.enable = true;
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     # Add any missing dynamic libraries for unpackaged programs
@@ -169,5 +170,4 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.11"; # Did you read the comment?
   # Disable GTK theme management
-  gtk.enable = false;
 }
