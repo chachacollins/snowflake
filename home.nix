@@ -27,7 +27,6 @@
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
     # # fonts?
     # (pkgs.nerdfonts.overridehome.packages = with pkgs; [
-    inputs.zen-browser.packages."${system}".specific
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
@@ -82,5 +81,40 @@
     #    [credential]
     # helper = store
     extraConfig.credential.helper = "store";
+  };
+  programs.dunst = {
+    enable = true;
+    settings = {
+      global = {
+        monitor = 0;
+        follow = "mouse";
+        geometry = "300x50-10+10";
+        transparency = 0;
+        frame_color = "#ffffff";
+        separator_color = "frame";
+        padding = 10;
+        horizontal_padding = 10;
+        font = "Monospace 10";
+      };
+
+      urgency_low = {
+        background = "#000000";
+        foreground = "#ffffff";
+        timeout = 5;
+      };
+
+      urgency_normal = {
+        background = "#000000";
+        foreground = "#ffffff";
+        timeout = 10;
+      };
+
+      urgency_critical = {
+        background = "#000000";
+        foreground = "#ff0000";
+        frame_color = "#ff0000";
+        timeout = 0;
+      };
+    };
   };
 }
