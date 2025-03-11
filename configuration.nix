@@ -126,6 +126,7 @@
     ly
     gtk3
     wireplumber
+    lxappearance
   ];
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
