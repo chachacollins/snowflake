@@ -39,7 +39,7 @@
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = false;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.desktopManager.gnome.enable = false;
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     # Add any missing dynamic libraries for unpackaged programs
@@ -127,6 +127,7 @@
     gtk3
     wireplumber
     lxappearance
+    nh
   ];
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
