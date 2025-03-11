@@ -58,7 +58,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
   services.pipewire = {
@@ -79,6 +79,7 @@
 
   # Install firefox.
   programs.firefox.enable = true;
+  programs.vim.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
