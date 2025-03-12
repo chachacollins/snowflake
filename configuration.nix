@@ -14,6 +14,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.systemd-boot.configurationLimit = 2;
 
   networking.hostName = "witchdoctor"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -134,7 +135,7 @@
     lxappearance
     nh
     vlc
-    setxbkmap
+    xorg.setxkbmap
   ];
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
