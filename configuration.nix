@@ -104,6 +104,7 @@
     rofi
     git
     neovim
+    mpv
     tmux
     clang
     lua
