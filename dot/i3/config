@@ -16,8 +16,7 @@ set $mod Mod4
 
 exec_always --no-startup-id picom
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/new.jpg
-exec_always --no-startup-id setxkbmap -option ctrl:nocaps
-
+exec_always --no-startup-id setxkbmap -option  caps:escape
 # kill any hanging polybar processes
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh

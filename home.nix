@@ -28,6 +28,22 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
     ".zshrc".source = ./dot/.zshrc;
+    ".config/i3/config".source = ./dot/i3/config;
+    ".config/polybar" = {
+      source = ./dot/polybar;
+      recursive = true;
+    };
+    ".config/alacritty/alacritty.toml".source = ./dot/alacritty/alacritty.toml;
+    ".config/rofi" = {
+      source = ./dot/rofi;
+      recursive = true;
+    };
+    ".config/picom/picom.conf".source = ./dot/picom/picom.conf;
+    ".config/tmux" = {
+      source = ./dot/tmux/tmux;
+      recursive = true;
+    };
+    ".config/dunst/dunstrc".source = ./dot/dunst/dunstrc;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
