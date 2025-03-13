@@ -137,6 +137,7 @@
     nh
     vlc
     xorg.setxkbmap
+    libreoffice
   ];
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
