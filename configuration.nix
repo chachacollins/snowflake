@@ -94,9 +94,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
     wget
     i3
     dmenu
@@ -140,10 +137,14 @@
     nh
     vlc
     xorg.setxkbmap
-    libreoffice
+    obsidian
   ];
+  fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
   ];
   services.displayManager.ly.enable = true;
   programs.zsh.enable = true;
