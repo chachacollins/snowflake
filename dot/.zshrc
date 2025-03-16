@@ -29,7 +29,7 @@ alias vim="nvim"
 alias rebuild="sudo nixos-rebuild switch --flake $HOME/snowflake/"
 alias cd="z"
 alias cat="bat"
-export MANPAGER="vim -M +MANPAGER -"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
 # Define the function to change directory
