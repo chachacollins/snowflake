@@ -63,6 +63,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 bindsym $mod+c exec firefox
+bindsym $mod+shift+s exec flameshot gui
 
 # kill focused window
 bindsym $mod+q kill
