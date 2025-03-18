@@ -38,6 +38,11 @@
   services.xserver.enable = true;
   services.xserver.windowManager.i3.enable = true;
 
+  #bluetooth
+  services.blueman.enable = true; # For Blueman GUI (optional)
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = false;
   services.xserver.desktopManager.gnome.enable = false;
@@ -93,7 +98,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim
     wget
     i3
     dmenu
@@ -138,6 +143,10 @@
     vlc
     xorg.setxkbmap
     obsidian
+    man-pages
+    man-pages-posix
+    curl
+    bluetui
   ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
