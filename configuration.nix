@@ -34,6 +34,10 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
+  #power management
+  services.power-profiles-daemon.enable = false;
+  services.tlp.enable = true;
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.windowManager.i3.enable = true;
@@ -43,9 +47,10 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
+
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = false;
-  services.xserver.desktopManager.gnome.enable = false;
+  services.xserver.desktopManager.gnome.enable = true;
   programs.dconf.enable = true;
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -98,7 +103,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    emacs
     vim
+    udiskie
     wget
     i3
     dmenu
@@ -109,6 +116,7 @@
     rofi
     git
     neovim
+    dotnet-sdk
     mpv
     tmux
     clang
@@ -147,6 +155,7 @@
     man-pages-posix
     curl
     bluetui
+    libreoffice
   ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
@@ -158,6 +167,7 @@
   services.displayManager.ly.enable = true;
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+  services.udisks2.enable = true;
 
   nix.gc = {
     automatic = true;

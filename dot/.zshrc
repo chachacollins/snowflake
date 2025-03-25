@@ -12,6 +12,7 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+
 source $ZSH/oh-my-zsh.sh
 eval "$(zoxide init zsh)"
 # Check archlinux plugin commands here
@@ -21,7 +22,7 @@ eval "$(zoxide init zsh)"
 # Project page: https://gitlab.com/phoneybadger/pokemon-colorscripts#on-other-distros-and-macos
 
 # Set-up icons for files/folders in terminal
-alias ls='eza -a --icons'
+alias ls='eza --icons'
 alias lsa='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias cls="clear"
