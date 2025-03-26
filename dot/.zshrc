@@ -27,7 +27,7 @@ alias lsa='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias cls="clear"
 alias vim="nvim"
-alias rebuild="sudo nixos-rebuild switch --flake $HOME/snowflake/"
+alias rebuild="$HOME/helper.sh"
 alias cd="z"
 alias cat="bat"
 

@@ -164,6 +164,8 @@
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji
+    pkgs.nerd-fonts.victor-mono
+    pkgs.nerd-fonts.blex-mono
   ];
   services.displayManager.ly.enable = true;
   programs.zsh.enable = true;
