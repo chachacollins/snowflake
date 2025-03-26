@@ -125,6 +125,8 @@
     zip
     unzip
     neofetch
+    nasm
+    youtube-music
     ripgrep
     fzf
     yazi
