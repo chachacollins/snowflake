@@ -31,6 +31,8 @@ alias rebuild="$HOME/helper.sh"
 alias cd="z"
 alias cat="bat"
 
+export MANPAGER='nvim +Man!'
+
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
