@@ -108,6 +108,7 @@
     wget
     i3
     dmenu
+    fish
     alacritty
     feh
     picom
