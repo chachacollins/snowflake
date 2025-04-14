@@ -108,7 +108,6 @@
     wget
     i3
     dmenu
-    fish
     alacritty
     feh
     picom
@@ -116,7 +115,6 @@
     rofi
     git
     neovim
-    dotnet-sdk
     mpv
     tmux
     clang
@@ -126,7 +124,6 @@
     unzip
     neofetch
     nasm
-    youtube-music
     ripgrep
     fzf
     yazi
@@ -158,6 +155,7 @@
     curl
     bluetui
     libreoffice
+    gdb
   ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
