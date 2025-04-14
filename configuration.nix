@@ -156,6 +156,8 @@
     bluetui
     libreoffice
     gdb
+    code-cursor
+    nodejs
   ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
