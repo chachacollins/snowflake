@@ -32,7 +32,7 @@ alias cd="z"
 alias cat="bat"
 
 export MANPAGER='nvim +Man!'
-export PATH'.local/bin/'
+export PATH="$HOME/.local/bin:$PATH"
 
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
