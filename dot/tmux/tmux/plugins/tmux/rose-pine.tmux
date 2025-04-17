@@ -55,13 +55,13 @@ main() {
         thm_overlay="#26233a";
         thm_muted="#20BBFC";
         thm_subtle="#908caa";
-        thm_text="#e0def4";
+        thm_text="#d4be98";
         thm_love="#eb6f92";
-        thm_gold="#f6c177";
+        thm_gold="#e0def4";
         thm_rose="#ebbcba";
-        thm_pine="#20BBFC";
+        thm_pine="#7daea3";
         thm_foam="#9ccfd8";
-        thm_iris="#20BBFC";
+        thm_iris="#7daea3";
         thm_hl_low="#21202e";
         thm_hl_med="#403d52";
         thm_hl_high="#524f67";
