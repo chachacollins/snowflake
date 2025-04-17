@@ -27,7 +27,7 @@ configuration {
     FG:    @foreground;
     FGA:   #F28FADff;
 
-    BDR:   #d75f87;
+    BDR:   #7daea3;
 
     SEL:   #1E1E2Eff;
     UGT:   #F28FADff;
