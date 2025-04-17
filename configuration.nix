@@ -65,6 +65,18 @@
     layout = "us";
     variant = "";
   };
+# Enable Sway window manager
+  programs.sway = {
+    enable = true;
+    wrapperFeatures.gtk = true; # So that GTK applications run with Wayland by default
+  };
+
+# Configure XDG portal for screen sharing
+xdg.portal = {
+  enable = true;
+  wlr.enable = true;
+  extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+};
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -105,6 +117,7 @@
   environment.systemPackages = with pkgs; [
     vim
     udiskie
+    waybar
     wget
     i3
     dmenu
