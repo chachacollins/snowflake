@@ -15,7 +15,7 @@ set $mod Mod4
 # set $mod Mod1
 
 exec_always --no-startup-id picom --config .config/picom/picom.conf
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/neskin.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/paint.png
 exec_always --no-startup-id setxkbmap -option  caps:escape
 # kill any hanging polybar processes
 exec_always killall polybar
