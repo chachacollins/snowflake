@@ -158,6 +158,7 @@
     gdb
     code-cursor
     nodejs
+    eww
   ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
