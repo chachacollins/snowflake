@@ -15,7 +15,7 @@ set $mod Mod4
 # set $mod Mod1
 
 exec_always --no-startup-id picom --config .config/picom/picom.conf
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/1080.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/aesthetic-anime-11.jpg
 exec_always --no-startup-id setxkbmap -option  caps:escape
 # kill any hanging polybar processes
 exec_always killall polybar
@@ -217,7 +217,7 @@ set $mantle    #181825
 set $crust     #11111b
 
 # target                 title     bg    text      indicator    border
-client.focused           $mantle   $mauve $mantle  $rosewater $mauve
+client.focused           $mantle   $mauve $mantle  $rosewater #000000
 client.focused_inactive  $overlay0 $base  $text    $rosewater $overlay0
 client.unfocused         $overlay0 $base  $text    $rosewater $overlay0
 client.urgent            $peach    $base  $peach   $overlay0  $peach
