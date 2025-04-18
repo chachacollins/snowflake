@@ -29,7 +29,7 @@ configuration {
 
     BDR:   #7daea3;
 
-    SEL:   #1E1E2Eff;
+    SEL:   #ea6962ff;
     UGT:   #F28FADff;
     IMG:   #FAE3B0ff;
     OFF:   #575268ff;
