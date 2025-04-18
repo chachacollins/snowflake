@@ -29,7 +29,7 @@ configuration {
 
     BDR:   #7daea3;
 
-    SEL:   #ea6962ff;
+    SEL:   #0a0a10ff;
     UGT:   #F28FADff;
     IMG:   #FAE3B0ff;
     OFF:   #575268ff;
@@ -168,7 +168,7 @@ element alternate.active {
 
 element-text selected,
 element selected {
-    background-color:               @BGA;
+    background-color:               #ea6962;
     text-color:                     @SEL;
     border:                  	    0px 0px 0px 0px;
     border-radius:                  10px;
