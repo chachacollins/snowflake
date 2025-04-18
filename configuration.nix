@@ -183,9 +183,6 @@ xdg.portal = {
     pkgs.nerd-fonts.blex-mono
   ];
 
-  systemd.services.display-manager.serviceConfig.ExecStartPre = [
-    "/usr/bin/printf '%%b' '\\e]P0FFC5C4\\e]P7FFFFFF\\ec'"
-  ];
   services.displayManager.ly.enable = true;
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
