@@ -5,8 +5,8 @@ add_newline = false
 # Main prompt format with fill to push version info to the right
 format = """
 $directory\
-$git_status\
 $git_branch\
+$git_status\
 $fill\
 $cmd_duration\
 $jobs\
