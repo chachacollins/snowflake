@@ -117,6 +117,7 @@ xdg.portal = {
   environment.systemPackages = with pkgs; [
     vim
     udiskie
+    starship
     waybar
     wget
     i3
