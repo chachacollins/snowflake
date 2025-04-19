@@ -116,6 +116,22 @@ main() {
     set status-left-length "200"
     set status-right-length "200"
 
+    # Nix-shell detection segment
+    local show_nix_shell
+    show_nix_shell="$(get_tmux_option "@rose_pine_show_nix_shell" "on")"
+    readonly show_nix_shell
+
+    local nix_shell_icon
+    nix_shell_icon="$(get_tmux_option "@rose_pine_nix_shell_icon" "  nix-shell ")"
+    readonly nix_shell_icon
+
+    # Using tmux's conditional command execution to perform the check only when updating status
+    local nix_shell_segment=""
+    if [[ "$show_nix_shell" == "on" ]]; then
+        nix_shell_segment='#($SHELL -c "[ -n \"$IN_NIX_SHELL\" ] && echo \"#[fg=$thm_pine,bg=$thm_base]$right_separator#[fg=$thm_base,bg=$thm_pine]$nix_shell_icon\"" || echo "")'
+    fi
+    readonly nix_shell_segment
+
 
     # Theoretically messages (need to figure out color placement)
     set message-style "fg=$thm_muted,bg=$thm_base"
@@ -335,7 +351,7 @@ main() {
 
     # Right status and organization:
     # Right status shows nothing by default
-    local right_column
+    local right_column=$nix_shell_segment$right_column
 
     # This if statement allows the bg colors to be null if the user decides so
     # It sets the base colors for active / inactive, no matter the window appearence switcher choice
