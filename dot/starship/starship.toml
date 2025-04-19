@@ -1,0 +1,141 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Main prompt format with fill to push version info to the right
+format = """
+$directory\
+$git_status\
+$git_branch\
+$fill\
+$cmd_duration\
+$jobs\
+$golang\
+$java\
+$nodejs\
+$rust\
+$python\
+$ruby\
+$php\
+$c\
+$elixir\
+$elm\
+$haskell\
+$julia\
+$swift\
+$aws\
+$azure\
+$conda\
+$docker_context\
+$line_break\
+$character
+"""
+
+# Use fill module to push everything after it to the right
+[fill]
+symbol = " "
+style = "bold black"
+
+[character]
+success_symbol = '[λ](#d3869b)'
+error_symbol = '[λ](bold red)'
+
+[directory]
+style = '#7daea3'
+truncation_length = 3     # Number of parent folders to show
+truncate_to_repo = false   
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[git_branch]
+format = '[$branch ]($style)[$symbol]($style)' 
+style = 'bold purple'
+
+# Command duration module
+[cmd_duration]
+min_time = 500
+format = '[$duration]($style) '
+style = 'yellow'
+show_milliseconds = false
+
+# Background jobs module
+[jobs]
+symbol = '✦'
+style = 'bold blue'
+number_threshold = 1
+format = '[$symbol$number]($style) '
+
+# Version modules with cleaner formatting (no "via" keyword)
+[golang]
+format = '[$symbol($version )]($style)'
+style = 'cyan bold'
+
+[java]
+format = '[$symbol($version )]($style)'
+style = 'red bold'
+
+[nodejs]
+format = '[$symbol($version )]($style)'
+style = 'green bold'
+
+[rust]
+format = '[$symbol($version )]($style)'
+style = 'red bold'
+
+[python]
+format = '[$symbol($version )($virtualenv )]($style)'
+style = 'yellow bold'
+
+[ruby]
+format = '[$symbol($version )]($style)'
+style = 'red bold'
+
+[php]
+format = '[$symbol($version )]($style)'
+style = 'purple bold'
+
+[c]
+format = '[$symbol($version )]($style)'
+symbol = ' '
+style = 'blue bold'
+
+[elixir]
+format = '[$symbol($version )]($style)'
+style = 'purple bold'
+
+[elm]
+format = '[$symbol($version )]($style)'
+style = 'cyan bold'
+
+[haskell]
+format = '[$symbol($version )]($style)'
+style = 'purple bold'
+
+[julia]
+format = '[$symbol($version )]($style)'
+style = 'purple bold'
+
+[swift]
+format = '[$symbol($version )]($style)'
+style = 'yellow bold'
+
+[aws]
+format = '[$symbol($profile )($region )]($style)'
+symbol = '󰸏 '
+style = 'bold yellow'
+
+[azure]
+format = '[$symbol($subscription)]($style)'
+symbol = '󰠅 '
+style = 'blue bold'
+
+[conda]
+format = '[$symbol$environment]($style)'
+symbol = '󱔎 '
+style = 'green bold'
+
+[docker_context]
+format = '[$symbol$context]($style)'
+symbol = '󰡨'

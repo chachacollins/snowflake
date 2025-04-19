@@ -44,6 +44,7 @@
       recursive = true;
     };
     ".config/dunst/dunstrc".source = ./dot/dunst/dunstrc;
+    ".config/starship.toml".source = ./dot/starship/starship.toml;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
