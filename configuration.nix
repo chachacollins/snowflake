@@ -174,6 +174,7 @@ xdg.portal = {
     nodejs
     eww
     fish
+    emacs
   ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
@@ -187,6 +188,7 @@ xdg.portal = {
 
   services.displayManager.ly.enable = true;
   programs.zsh.enable = true;
+  programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
   services.udisks2.enable = true;
 
@@ -194,7 +196,6 @@ xdg.portal = {
     automatic = true;
     dates = "weekly";
   };
-programs.fish.enable = true;
 
 
   # Some programs need SUID wrappers, can be configured further or are
