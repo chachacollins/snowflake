@@ -116,9 +116,7 @@ main() {
     set status-left-length "200"
     set status-right-length "200"
 
-    local nix_shell_icon="  nix-shell "
-    local nix_shell_segment='#($SHELL -c "[ -n \"$IN_NIX_SHELL\" ] && echo \"#[fg=$thm_base,bg=$thm_pine]$nix_shell_icon\"" || echo "")'
-    readonly nix_shell_segment
+
 
     # Theoretically messages (need to figure out color placement)
     set message-style "fg=$thm_muted,bg=$thm_base"
@@ -420,7 +418,7 @@ main() {
 
     # We set the sections
     set status-left "$left_column"
-    set status-right "$nix_shell_segment$right_column"
+    set status-right "$right_column"
 
     # Variable logic for the window prioritization
     local current_window_count
