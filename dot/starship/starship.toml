@@ -55,7 +55,7 @@ style = 'bold purple'
 
 # Command duration module
 [cmd_duration]
-min_time = 0
+min_time = 500
 format = '[$duration]($style) '
 style = 'yellow'
 show_milliseconds = false
