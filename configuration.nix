@@ -189,7 +189,7 @@ xdg.portal = {
   services.displayManager.ly.enable = true;
   programs.zsh.enable = true;
   programs.fish.enable = true;
-  users.defaultUserShell = pkgs.fish;
+  users.defaultUserShell = pkgs.zsh;
   services.udisks2.enable = true;
 
   nix.gc = {

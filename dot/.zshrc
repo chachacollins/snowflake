@@ -7,7 +7,6 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
     git
-    archlinux
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
@@ -36,20 +35,9 @@ export PATH="$HOME/.local/bin:$PATH"
 
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
-source <(fzf --zsh)
-# Define the function to change directory
-open_dir() {
-    local DIR
-    DIR=$(find . -type d | fzf) # Use fzf to select a directory
-    if [ -n "$DIR" ]; then
-        cd "$DIR" || return
-        echo "Changed directory to: $(pwd)"
-    fi
-}
-
 # Bind Ctrl+N to the open_dir function
-zle -N open_dir
-bindkey '^N' open_dir
+zle -N  tmux-sessionizer
+bindkey '^N' tmux-sessionizer
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
