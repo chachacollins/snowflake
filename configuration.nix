@@ -129,7 +129,7 @@ xdg.portal = {
     rofi
     git
     neovim
-    make
+    gnumake
     mpv
     tmux
     clang
