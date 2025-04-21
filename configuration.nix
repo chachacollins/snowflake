@@ -130,6 +130,7 @@ xdg.portal = {
     git
     neovim
     gnumake
+    gum
     mpv
     tmux
     clang
