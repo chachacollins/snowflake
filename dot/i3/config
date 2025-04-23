@@ -17,7 +17,6 @@ set $mod Mod4
 exec_always --no-startup-id picom --config .config/picom/picom.conf
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/aesthetic-anime-11.jpg
 exec_always --no-startup-id setxkbmap -option  caps:escape
-exec_always --no-startup-id doom run --daemon
 # kill any hanging polybar processes
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
