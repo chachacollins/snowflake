@@ -140,6 +140,7 @@ xdg.portal = {
     unzip
     neofetch
     nasm
+    fasm
     ripgrep
     fzf
     yazi
