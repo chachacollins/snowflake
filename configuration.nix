@@ -109,7 +109,7 @@ xdg.portal = {
   nixpkgs.config.allowUnfree = true;
 
   environment.sessionVariables = {
-    FLAKE = "/home/alchemist/snowflake/";
+    NH_FLAKE = "/home/alchemist/snowflake/";
   };
 
   # List packages installed in system profile. To search, run:
