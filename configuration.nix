@@ -178,6 +178,10 @@ xdg.portal = {
     eww
     fish
     emacs
+    qemu
+    zathura
+    file
+    fd
   ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
