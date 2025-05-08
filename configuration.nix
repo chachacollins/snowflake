@@ -182,6 +182,7 @@ xdg.portal = {
     zathura
     file
     fd
+    dysk
   ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
