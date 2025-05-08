@@ -180,6 +180,7 @@ xdg.portal = {
     emacs
     qemu
     zathura
+    wezterm
     file
     fd
     dysk
