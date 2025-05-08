@@ -28,6 +28,7 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
     ".zshrc".source = ./dot/.zshrc;
+    ".wezterm.lua".source = ./dot/wezterm/wezterm.lua;
     ".config/i3/config".source = ./dot/i3/config;
     ".config/polybar" = {
       source = ./dot/polybar;
