@@ -65,7 +65,7 @@ config.window_decorations = "RESIZE"
 config.window_close_confirmation = "NeverPrompt"
 
 -- Add a variable to track tab bar visibility state
-local tab_bar_hidden = true
+local tab_bar_hidden = false
 config.cursor_blink_rate = 0
 config.max_fps = 60
 -- config.front_end = "WebGpu"
@@ -251,7 +251,7 @@ config.colors = {
 	},
 }
 -- tab bar
-config.hide_tab_bar_if_only_one_tab = true
+config.hide_tab_bar_if_only_one_tab = false
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 config.tab_and_split_indices_are_zero_based = false
@@ -302,7 +302,7 @@ wezterm.on("update-right-status", function(window, _)
 		ARROW_FOREGROUND = { Foreground = { Color = "#7daea3" } }
 	end -- arrow color based on if tab is first pane
 	window:set_left_status(wezterm.format({
-		{ Background = { Color = "#d3869b" } },
+		{ Background = { Color = "#7daea3" } },
 		{ Text = prefix },
 		ARROW_FOREGROUND,
 		{ Text = SOLID_LEFT_ARROW },
