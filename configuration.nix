@@ -175,7 +175,6 @@ xdg.portal = {
     gdb
     code-cursor
     nodejs
-    eww
     fish
     emacs
     qemu
@@ -184,7 +183,6 @@ xdg.portal = {
     file
     fd
     dysk
-    surf
   ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [

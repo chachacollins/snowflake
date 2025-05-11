@@ -126,7 +126,7 @@ config.keys = {
 	{
 		mods = "LEADER",
 		key = "m",
-		action = wezterm.action.SendString("termsh\n"),
+		action = wezterm.action.SendString("meow\n"),
 	},
 	{
 		mods = "LEADER",
