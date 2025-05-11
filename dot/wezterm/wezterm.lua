@@ -125,6 +125,11 @@ config.keys = {
 	},
 	{
 		mods = "LEADER",
+		key = "m",
+		action = wezterm.action.SendString("termsh\n"),
+	},
+	{
+		mods = "LEADER",
 		key = "v",
 		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
