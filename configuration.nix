@@ -116,7 +116,6 @@ xdg.portal = {
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
-    qutebrowser
     udiskie
     starship
     waybar
