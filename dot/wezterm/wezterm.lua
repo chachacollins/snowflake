@@ -130,6 +130,11 @@ config.keys = {
 	},
 	{
 		mods = "LEADER",
+		key = "e",
+		action = wezterm.action.SendString("yazi\n"),
+	},
+	{
+		mods = "LEADER",
 		key = "v",
 		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
