@@ -100,6 +100,13 @@ xdg.portal = {
       #  thunderbird
     ];
   };
+  programs.virt-manager.enable = true;
+
+  users.groups.libvirtd.members = ["alchemist"];
+
+  virtualisation.libvirtd.enable = true;
+
+  virtualisation.spiceUSBRedirection.enable = true;
 
   # Install firefox.
   programs.firefox.enable = true;
