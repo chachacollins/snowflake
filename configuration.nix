@@ -31,7 +31,6 @@
   # Set your time zone.
   time.timeZone = "Africa/Nairobi";
 
-  virtualisation.virtualbox.host.enable = true;
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
@@ -96,9 +95,9 @@ xdg.portal = {
   users.users.alchemist = {
     isNormalUser = true;
     description = "alchemist";
-    extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      # thunderbird
+      #  thunderbird
     ];
   };
   programs.virt-manager.enable = true;
@@ -124,6 +123,7 @@ xdg.portal = {
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
+    vlang
     udiskie
     starship
     waybar
@@ -185,7 +185,6 @@ xdg.portal = {
     nodejs
     fish
     emacs
-    qemu
     zathura
     wezterm
     file
