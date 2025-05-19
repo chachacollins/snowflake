@@ -32,7 +32,6 @@
   time.timeZone = "Africa/Nairobi";
 
   virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "alchemist" ];
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
@@ -97,9 +96,9 @@ xdg.portal = {
   users.users.alchemist = {
     isNormalUser = true;
     description = "alchemist";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
     packages = with pkgs; [
-      #  thunderbird
+      # thunderbird
     ];
   };
   programs.virt-manager.enable = true;
