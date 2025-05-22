@@ -138,7 +138,7 @@ xdg.portal = {
     git
     neovim
     gnumake
-    fvmw3
+    fvwm3
     gum
     mpv
     tmux
