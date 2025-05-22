@@ -111,7 +111,6 @@ xdg.portal = {
   # Install firefox.
   programs.firefox.enable = true;
   programs.vim.enable = true;
-  programs.fvwm.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -139,6 +138,7 @@ xdg.portal = {
     git
     neovim
     gnumake
+    fvmw3
     gum
     mpv
     tmux
