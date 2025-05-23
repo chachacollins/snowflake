@@ -129,6 +129,7 @@ xdg.portal = {
   environment.systemPackages = with pkgs; [
     vim
     mysql84
+    mycli
     vlang
     udiskie
     starship
