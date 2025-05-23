@@ -112,7 +112,10 @@ xdg.portal = {
   # Install firefox.
   programs.firefox.enable = true;
   programs.vim.enable = true;
-  services.mysql.enable = true;
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
