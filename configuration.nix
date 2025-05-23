@@ -124,7 +124,7 @@ xdg.portal = {
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
-    cdesktopenv
+    mysql84
     vlang
     udiskie
     starship
