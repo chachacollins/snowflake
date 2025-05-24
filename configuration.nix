@@ -24,6 +24,11 @@
     };
   };
 
+  virtualisation.libvirtd.enable = true;
+
+  # if you use libvirtd on a desktop environment
+  programs.virt-manager.enable = true; # can be used to manage non-local hosts as well
+
   networking.hostName = "witchdoctor"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -137,6 +142,7 @@ xdg.portal = {
   environment.systemPackages = with pkgs; [
     vim
     mysql84
+    qemu
     mycli
     vlang
     udiskie
