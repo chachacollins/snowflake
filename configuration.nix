@@ -24,11 +24,6 @@
     };
   };
 
-  virtualisation.libvirtd.enable = true;
-
-  # if you use libvirtd on a desktop environment
-  programs.virt-manager.enable = true; # can be used to manage non-local hosts as well
-
   networking.hostName = "witchdoctor"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -115,12 +110,9 @@ xdg.portal = {
     ];
   };
   programs.virt-manager.enable = true;
-
-  users.groups.libvirtd.members = ["alchemist"];
-
   virtualisation.libvirtd.enable = true;
-
   virtualisation.spiceUSBRedirection.enable = true;
+  users.groups.libvirtd.members = ["alchemist"];
 
   # Install firefox.
   programs.firefox.enable = true;
