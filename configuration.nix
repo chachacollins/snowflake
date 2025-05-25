@@ -71,8 +71,9 @@
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+    layout = "us,us";
+    variant = ",dvorak";
+    options = "grp:alt_shift_toggle";
   };
 # Enable Sway window manager
   programs.sway = {
