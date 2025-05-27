@@ -190,6 +190,7 @@ xdg.portal = {
     gdb
     code-cursor
     nodejs
+    yarn
     fish
     emacs
     zathura
