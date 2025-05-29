@@ -168,6 +168,7 @@ xdg.portal = {
     killall
     eza
     zsh
+    chromium
     oh-my-zsh
     zoxide
     bat
