@@ -42,7 +42,7 @@ end
 -- For example, changing the color scheme:
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font_with_fallback({
-	"JetBrains Mono",
+	"JetBrainsMono Nerd Font Mono",
 	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
 	weight = "Regular",
 	family = "Symbols Nerd Font Mono",

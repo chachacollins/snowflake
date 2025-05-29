@@ -169,7 +169,6 @@ xdg.portal = {
     eza
     zsh
     oh-my-zsh
-    qutebrowser
     zoxide
     bat
     clang-tools
