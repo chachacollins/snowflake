@@ -15,7 +15,7 @@
       home-manager = inputs.home-manager;
     in
     {
-      nixosConfigurations.witchdoctor = nixpkgs.lib.nixosSystem
+      nixosConfigurations.coven= nixpkgs.lib.nixosSystem
         {
           modules = [
             ./configuration.nix
