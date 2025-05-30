@@ -126,6 +126,7 @@ xdg.portal = {
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
+    fritzing
     mysql84
     qemu
     mycli
