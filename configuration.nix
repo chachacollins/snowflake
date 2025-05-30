@@ -191,6 +191,7 @@ xdg.portal = {
     gdb
     code-cursor
     nodejs
+    quickemu
     yarn
     fish
     emacs
