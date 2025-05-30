@@ -129,6 +129,7 @@ xdg.portal = {
     fritzing
     mysql84
     qemu
+    winePackages.unstable
     mycli
     vlang
     udiskie
