@@ -45,8 +45,8 @@
 
   #bluetooth
   services.blueman.enable = true; # For Blueman GUI (optional)
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
+  hardware.bluetooth.enable = false;
+  hardware.bluetooth.powerOnBoot = false;
 
 
   # Enable the GNOME Desktop Environment.
