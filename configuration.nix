@@ -67,18 +67,13 @@
     variant = ",dvorak";
     options = "grp:alt_shift_toggle";
   };
-# Enable Sway window manager
-  programs.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true; # So that GTK applications run with Wayland by default
-  };
 
 # Configure XDG portal for screen sharing
-xdg.portal = {
-  enable = true;
-  wlr.enable = true;
-  extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-};
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -102,6 +97,7 @@ xdg.portal = {
       #  thunderbird
     ];
   };
+
   programs.virt-manager.enable = true;
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
@@ -145,6 +141,7 @@ xdg.portal = {
     rofi
     git
     neovim
+    mg
     gnumake
     fvwm3
     gum
@@ -208,8 +205,6 @@ xdg.portal = {
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji
-    pkgs.nerd-fonts.victor-mono
-    pkgs.nerd-fonts.blex-mono
   ];
 
   services.displayManager.ly.enable = true;
