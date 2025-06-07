@@ -49,9 +49,6 @@
   hardware.bluetooth.powerOnBoot = true;
 
 
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = false;
-  services.xserver.desktopManager.gnome.enable = true;
   programs.dconf.enable = true;
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -177,7 +174,6 @@
     gtk3
     wireplumber
     lxappearance
-    nh
     vlc
     xorg.setxkbmap
     obsidian
