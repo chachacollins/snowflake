@@ -41,7 +41,6 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.windowManager.i3.enable = true;
-  services.xserver.windowManager.fvwm3.enable = true;
 
   #bluetooth
   services.blueman.enable = true; # For Blueman GUI (optional)
@@ -119,18 +118,15 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
-    fritzing
     mysql84
     qemu
     winePackages.unstable
     mycli
-    vlang
     udiskie
     starship
     waybar
     wget
     i3
-    dmenu
     alacritty
     feh
     picom
@@ -138,9 +134,7 @@
     rofi
     git
     neovim
-    mg
     gnumake
-    fvwm3
     gum
     mpv
     tmux
@@ -183,7 +177,7 @@
     bluetui
     libreoffice
     gdb
-    code-cursor
+    nh
     nodejs
     quickemu
     yarn
