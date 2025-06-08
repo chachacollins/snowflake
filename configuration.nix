@@ -118,6 +118,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
+    jetbrains.clion
     mysql84
     qemu
     winePackages.unstable
