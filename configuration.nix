@@ -6,70 +6,47 @@
       ./hardware-configuration.nix
       ./programs.nix
     ];
-
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.configurationLimit = 2;
-
   networking.hostName = "coven"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
   # Enable networking
   networking.networkmanager.enable = true;
   #flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
   # Set your time zone.
   time.timeZone = "Africa/Nairobi";
-
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
-
   #power management
   services.power-profiles-daemon.enable = false;
   services.tlp.enable = true;
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.windowManager.i3.enable = true;
-
   #bluetooth
   services.blueman.enable = true; # For Blueman GUI (optional)
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
-
-
-  programs.dconf.enable = true;
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    # Add any missing dynamic libraries for unpackaged programs
-    # here, NOT in environment.systemPackages
-    pkgs.stdenv.cc.cc.lib
-    pkgs.libz
-  ];
-
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us,us";
     variant = ",dvorak";
     options = "grp:alt_shift_toggle";
   };
-
-# Configure XDG portal for screen sharing
+  # Configure XDG portal for screen sharing
   xdg.portal = {
     enable = true;
     wlr.enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
-
   # Enable CUPS to print documents.
   services.printing.enable = true;
-
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   # Enable touchpad support (enabled default in most desktopManager).
@@ -79,7 +56,6 @@
     audio.enable = true;
     pulse.enable = true;
   };
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.alchemist = {
     isNormalUser = true;
@@ -89,29 +65,14 @@
       #  thunderbird
     ];
   };
-
-  programs.virt-manager.enable = true;
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
   users.groups.libvirtd.members = ["alchemist"];
-
-  # Install firefox.
-  programs.firefox.enable = true;
-  programs.vim.enable = true;
-  services.mysql = {
-    enable = true;
-    package = pkgs.mariadb;
-  };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
   environment.sessionVariables = {
     NH_FLAKE = "/home/alchemist/snowflake/";
   };
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
@@ -119,19 +80,13 @@
     noto-fonts-cjk-sans
     noto-fonts-emoji
   ];
-
   services.displayManager.ly.enable = true;
-  programs.zsh.enable = true;
-  programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
   services.udisks2.enable = true;
-
   nix.gc = {
     automatic = true;
     dates = "weekly";
   };
-
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

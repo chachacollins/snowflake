@@ -1,8 +1,26 @@
+# Where all my programs live
 { config, pkgs, ... }:
 {
+  programs.dconf.enable = true;
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    # Add any missing dynamic libraries for unpackaged programs
+    # here, NOT in environment.systemPackages
+    pkgs.stdenv.cc.cc.lib
+    pkgs.libz
+  ];
+  programs.zsh.enable = true;
+  programs.fish.enable = true;
+  programs.virt-manager.enable = true;
+  programs.firefox.enable = true;
+  programs.vim.enable = true;
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+  };
+
   environment.systemPackages = with pkgs; [
     vim
-    jetbrains.clion
     mysql84
     qemu
     winePackages.unstable
