@@ -1,14 +1,10 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
-
 {
   imports =
     [
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./programs.nix
     ];
 
   # Bootloader.
@@ -116,80 +112,6 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vim
-    jetbrains.clion
-    mysql84
-    qemu
-    winePackages.unstable
-    mycli
-    udiskie
-    starship
-    waybar
-    wget
-    i3
-    alacritty
-    feh
-    picom
-    brightnessctl
-    rofi
-    git
-    neovim
-    gnumake
-    gum
-    mpv
-    tmux
-    clang
-    lua
-    jq
-    zip
-    unzip
-    neofetch
-    nasm
-    fasm
-    ripgrep
-    fzf
-    yazi
-    xclip
-    go
-    rustup
-    zig
-    polybar
-    dunst
-    killall
-    eza
-    zsh
-    oh-my-zsh
-    zoxide
-    bat
-    clang-tools
-    gcc
-    flameshot
-    ly
-    gtk3
-    wireplumber
-    lxappearance
-    vlc
-    xorg.setxkbmap
-    obsidian
-    man-pages
-    man-pages-posix
-    curl
-    bluetui
-    libreoffice
-    gdb
-    nh
-    nodejs
-    quickemu
-    yarn
-    fish
-    emacs
-    zathura
-    wezterm
-    file
-    fd
-    dysk
-  ];
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
