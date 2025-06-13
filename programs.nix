@@ -21,7 +21,7 @@
 
   environment.systemPackages = with pkgs; [
     vim
-    fmpeg_6
+    ffmpeg_6
     mysql84
     qemu
     winePackages.unstable
