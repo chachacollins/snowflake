@@ -29,6 +29,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.windowManager.i3.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
   #bluetooth
   services.blueman.enable = true; # For Blueman GUI (optional)
   hardware.bluetooth.enable = true;
