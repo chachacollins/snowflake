@@ -27,6 +27,7 @@
     mycli
     udiskie
     starship
+    ocaml
     wget
     i3
     alacritty
