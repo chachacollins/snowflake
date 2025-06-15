@@ -21,6 +21,7 @@
 
   environment.systemPackages = with pkgs; [
     vim
+    dune_3
     ffmpeg_6
     mysql84
     qemu
