@@ -91,5 +91,7 @@
     file
     fd
     dysk
+    wofi
+    waybar
   ];
 }
