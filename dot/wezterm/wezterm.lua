@@ -219,44 +219,44 @@ table.insert(config.keys, {
 	action = wezterm.action.ActivateTab(9),
 })
 config.colors = {
-	foreground = "#ebdbb2", -- text
-	background = "#0a0a10", -- base
-	cursor_bg = "#ebdbb2",
-	cursor_fg = "#0a0a10",
-	cursor_border = "#ebdbb2",
-	selection_fg = "#0a0a10",
-	selection_bg = "#a89984",
-	scrollbar_thumb = "#928374",
-	split = "#595959",
+	foreground = "#654735", -- latte text
+	background = "#f9f5d7", -- latte base
+	cursor_bg = "#654735",
+	cursor_fg = "#f9f5d7",
+	cursor_border = "#654735",
+	selection_fg = "#f9f5d7",
+	selection_bg = "#8c856d", -- latte overlay1
+	scrollbar_thumb = "#a69d81", -- latte overlay0
+	split = "#d1c7a3", -- latte surface1
 	ansi = {
-		"#292929", -- black
-		"#ea6962", -- red
-		"#a9b665", -- green
-		"#d8a657", -- yellow
-		"#7daea3", -- blue
-		"#d3869b", -- magenta
-		"#89b482", -- cyan
-		"#ebdbb2", -- white
+		"#e3dec3", -- latte surface0 (black)
+		"#c14a4a", -- latte red
+		"#6c782e", -- latte green
+		"#b47109", -- latte yellow
+		"#45707a", -- latte blue
+		"#945e80", -- latte mauve (magenta)
+		"#4c7a5d", -- latte teal (cyan)
+		"#654735", -- latte text (white)
 	},
 	brights = {
-		"#595959", -- bright black
-		"#ea6962", -- bright red
-		"#a9b665", -- bright green
-		"#d8a657", -- bright yellow
-		"#7daea3", -- bright blue
-		"#d3869b", -- bright magenta
-		"#89b482", -- bright cyan
-		"#ebdbb2", -- bright white
+		"#8c6249", -- latte overlay2 (bright black)
+		"#c14a4a", -- latte red
+		"#6c782e", -- latte green
+		"#b47109", -- latte yellow
+		"#45707a", -- latte blue
+		"#945e80", -- latte mauve (bright magenta)
+		"#4c7a5d", -- latte teal (bright cyan)
+		"#73503c", -- latte subtext1 (bright white)
 	},
 	tab_bar = {
-		background = "#0a0a10",
+		background = "#f9f5d7", -- latte base
 		active_tab = {
-			bg_color = "#7daea3",
-			fg_color = "#0a0a10",
+			bg_color = "#45707a", -- latte blue
+			fg_color = "#f9f5d7", -- latte base
 		},
 		inactive_tab = {
-			bg_color = "#292929",
-			fg_color = "#a89984",
+			bg_color = "#e3dec3", -- latte surface0
+			fg_color = "#8c856d", -- latte overlay1
 		},
 	},
 }
