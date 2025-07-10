@@ -3,30 +3,28 @@ cursor = "0x93a1a1"
 text = "0x002b36"
 
 [colors.primary]
-background = "#09090F"
-foreground = '#d4be98'
+background = '#141415'
+foreground = '#cdcdcd'
 
-# Normal colors
 [colors.normal]
-black   = '#32302f'
-red     = '#ea6962'
-green   = '#a9b665'
-yellow  = '#d8a657'
-blue    = '#7daea3'
-magenta = '#d3869b'
-cyan    = '#89b482'
-white   = '#d4be98'
+black = '#252530'
+red = '#d8647e'
+green = '#7fa563'
+yellow = '#f3be7c'
+blue = '#6e94b2'
+magenta = '#bb9dbd'
+cyan = '#aeaed1'
+white = '#cdcdcd'
 
-# Bright colors (same as normal colors)
 [colors.bright]
-black   = '#32302f'
-red     = '#ea6962'
-green   = '#a9b665'
-yellow  = '#d8a657'
-blue    = '#7daea3'
-magenta = '#d3869b'
-cyan    = '#89b482'
-white   = '#d4be98'
+black = '#606079'
+red = '#e08398'
+green = '#99b782'
+yellow = '#f5cb96'
+blue = '#8ba9c1'
+magenta = '#c9b1ca'
+cyan = '#bebeda'
+white = '#d7d7d7'
 
 
 [env]
