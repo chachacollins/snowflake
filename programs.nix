@@ -92,6 +92,7 @@
     fd
     dysk
     wofi
+    wl-clipboard
     waybar
   ];
 }
