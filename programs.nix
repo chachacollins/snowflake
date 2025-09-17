@@ -94,5 +94,6 @@
     wofi
     wl-clipboard
     waybar
+    jetbrains.idea-ultimate
   ];
 }
