@@ -13,7 +13,10 @@
   programs.fish.enable = true;
   programs.virt-manager.enable = true;
   programs.firefox.enable = true;
-  programs.vim.enable = true;
+  programs.vim = {
+      enable = true;
+      package = pkgs.vim-full;
+  };
   services.mysql = {
     enable = true;
     package = pkgs.mariadb;
