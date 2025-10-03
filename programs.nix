@@ -13,17 +13,13 @@
   programs.fish.enable = true;
   programs.virt-manager.enable = true;
   programs.firefox.enable = true;
-  programs.vim = {
-      enable = true;
-      package = pkgs.vim-full;
-  };
   services.mysql = {
     enable = true;
     package = pkgs.mariadb;
   };
 
   environment.systemPackages = with pkgs; [
-    vim
+    vim-full
     dune_3
     ffmpeg_6
     mysql84
