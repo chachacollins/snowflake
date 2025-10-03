@@ -11,6 +11,7 @@
   ];
   programs.zsh.enable = true;
   programs.fish.enable = true;
+  programs.vim.enable = true;
   programs.virt-manager.enable = true;
   programs.firefox.enable = true;
   services.mysql = {
