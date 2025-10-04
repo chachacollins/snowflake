@@ -31,12 +31,6 @@
       enable = true;
       autoRepeatDelay = 200;
       autoRepeatInterval = 35;
-      windowManager.dwm = {
-        enable = true;
-        package = pkgs.dwm.overrideAttrs {
-          src = ./dot/dwm;
-        };
-      };
   };
   services.xserver.windowManager.i3.enable = true;
   services.xserver.desktopManager.gnome.enable = true;

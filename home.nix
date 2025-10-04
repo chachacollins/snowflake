@@ -38,10 +38,6 @@
       recursive = true;
     };
     ".config/picom/picom.conf".source = ./dot/picom/picom.conf;
-    ".config/tmux" = {
-      source = ./dot/tmux/tmux;
-      recursive = true;
-    };
     ".config/dunst/dunstrc".source = ./dot/dunst/dunstrc;
     ".config/starship.toml".source = ./dot/starship/starship.toml;
 

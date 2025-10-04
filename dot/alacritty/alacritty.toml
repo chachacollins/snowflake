@@ -2,28 +2,31 @@
 cursor = "0x93a1a1"
 text = "0x002b36"
 
-[colors.hints.start]
-foreground = "#1E1E2E"
-background = "#F9E2AF"
-
-[colors.hints.end]
-foreground = "#1E1E2E"
-background = "#A6ADC8"
-
-[colors.normal]
-black = "#45475A"
-red  =  "#d75f87"
-green = "#A6E3A1"
-yellow = "#F9E2AF"
-blue = "#20BBFC"
-magenta = "#F5C2E7"
-cyan = "#d75f87"
-white = "#BAC2DE"
-
 [colors.primary]
-background = "#000000"
-foreground = '#F1F1F1'
+background = "#09090F"
+foreground = '#d4be98'
 
+# Normal colors
+[colors.normal]
+black   = '#32302f'
+red     = '#ea6962'
+green   = '#a9b665'
+yellow  = '#d8a657'
+blue    = '#7daea3'
+magenta = '#d3869b'
+cyan    = '#89b482'
+white   = '#d4be98'
+
+# Bright colors (same as normal colors)
+[colors.bright]
+black   = '#32302f'
+red     = '#ea6962'
+green   = '#a9b665'
+yellow  = '#d8a657'
+blue    = '#7daea3'
+magenta = '#d3869b'
+cyan    = '#89b482'
+white   = '#d4be98'
 
 [env]
 TERM = "xterm-256color"

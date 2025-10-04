@@ -61,7 +61,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec alacritty
 bindsym $mod+t exec alacritty
 bindsym $mod+c exec firefox
 bindsym $mod+shift+s exec flameshot gui
