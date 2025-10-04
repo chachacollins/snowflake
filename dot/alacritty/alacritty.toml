@@ -2,36 +2,34 @@
 cursor = "0x93a1a1"
 text = "0x002b36"
 
-[colors.primary]
-background = '#141415'
-foreground = '#cdcdcd'
+[colors.hints.start]
+foreground = "#1E1E2E"
+background = "#F9E2AF"
+
+[colors.hints.end]
+foreground = "#1E1E2E"
+background = "#A6ADC8"
 
 [colors.normal]
-black = '#252530'
-red = '#d8647e'
-green = '#7fa563'
-yellow = '#f3be7c'
-blue = '#6e94b2'
-magenta = '#bb9dbd'
-cyan = '#aeaed1'
-white = '#cdcdcd'
+black = "#45475A"
+red  =  "#d75f87"
+green = "#A6E3A1"
+yellow = "#F9E2AF"
+blue = "#20BBFC"
+magenta = "#F5C2E7"
+cyan = "#d75f87"
+white = "#BAC2DE"
 
-[colors.bright]
-black = '#606079'
-red = '#e08398'
-green = '#99b782'
-yellow = '#f5cb96'
-blue = '#8ba9c1'
-magenta = '#c9b1ca'
-cyan = '#bebeda'
-white = '#d7d7d7'
+[colors.primary]
+background = "#000000"
+foreground = '#F1F1F1'
 
 
 [env]
 TERM = "xterm-256color"
 
 [font]
-size = 15.9
+size = 10.9
 
 
 [font.normal]

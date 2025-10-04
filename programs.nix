@@ -88,6 +88,7 @@
     emacs
     zathura
     wezterm
+    tmux
     file
     fd
     dysk

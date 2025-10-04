@@ -27,7 +27,17 @@
   services.power-profiles-daemon.enable = false;
   services.tlp.enable = true;
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  services.xserver = {
+      enable = true;
+      autoRepeatDelay = 200;
+      autoRepeatInterval = 35;
+      windowManager.dwm = {
+        enable = true;
+        package = pkgs.dwm.overrideAttrs {
+          src = ./dot/dwm;
+        };
+      };
+  };
   services.xserver.windowManager.i3.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   programs.hyprland.enable = true; 
@@ -83,7 +93,7 @@
     noto-fonts-emoji
   ];
   services.displayManager.ly.enable = true;
-  users.defaultUserShell = pkgs.fish;
+  users.defaultUserShell = pkgs.bash;
   services.udisks2.enable = true;
   nix.gc = {
     automatic = true;
