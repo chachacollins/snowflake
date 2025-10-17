@@ -10,6 +10,7 @@
     pkgs.libz
   ];
   programs.zsh.enable = true;
+  programs.hyprland.enable = true;
   programs.fish.enable = true;
   programs.vim.enable = true;
   programs.virt-manager.enable = true;
@@ -92,9 +93,17 @@
     file
     fd
     dysk
-    wofi
     wl-clipboard
-    waybar
     jetbrains.idea-ultimate
+    nemo
+    grim
+    nwg-look
+    quickshell
+    socat
+    hyprshot
+    slurp
+    kitty
+    mako
+    hyprpaper
   ];
 }
