@@ -9,9 +9,6 @@
     pkgs.stdenv.cc.cc.lib
     pkgs.libz
   ];
-  programs.zsh.enable = true;
-  programs.hyprland.enable = true;
-  programs.fish.enable = true;
   programs.vim.enable = true;
   programs.virt-manager.enable = true;
   programs.firefox.enable = true;
@@ -24,13 +21,7 @@
     vim-full
     dune_3
     ffmpeg_6
-    mysql84
     qemu
-    winePackages.unstable
-    mycli
-    udiskie
-    starship
-    ocaml
     wget
     i3
     alacritty
@@ -39,32 +30,24 @@
     brightnessctl
     rofi
     git
-    neovim
     gnumake
     gum
     mpv
     clang
-    lua
     jq
     zip
     unzip
-    neofetch
     nasm
     fasm
-    ripgrep
     fzf
     yazi
     xclip
     go
     rustup
-    zig
     polybar
     dunst
     killall
     eza
-    zsh
-    zoxide
-    bat
     clang-tools
     gcc
     flameshot
@@ -79,31 +62,12 @@
     man-pages-posix
     curl
     bluetui
-    libreoffice
     gdb
     nh
     nodejs
-    quickemu
-    yarn
-    fish
-    emacs
     zathura
-    wezterm
     tmux
     file
-    fd
-    dysk
-    wl-clipboard
-    jetbrains.idea-ultimate
-    nemo
-    grim
-    nwg-look
-    quickshell
-    socat
-    hyprshot
-    slurp
-    kitty
-    mako
-    hyprpaper
+    libreoffice
   ];
 }

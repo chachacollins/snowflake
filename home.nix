@@ -3,8 +3,8 @@
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "alchemist";
-  home.homeDirectory = "/home/alchemist";
+  home.username = "kynikoi";
+  home.homeDirectory = "/home/kynikoi";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -62,7 +62,7 @@
   #
   # or
   #
-  #  /etc/profiles/per-user/alchemist/etc/profile.d/hm-session-vars.sh
+  #  /etc/profiles/per-user/kynikoi/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
     XKBOPTIONS = "caps:escape";

@@ -24,7 +24,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.backupFileExtension = "backup";
             home-manager.useUserPackages = true;
-            home-manager.users.alchemist.imports = [
+            home-manager.users.kynikoi.imports = [
               ./home.nix
             ];
             home-manager.extraSpecialArgs = { inherit inputs; system = "x86_64-linux"; };

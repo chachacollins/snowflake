@@ -33,8 +33,6 @@
       autoRepeatInterval = 35;
   };
   services.xserver.windowManager.i3.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  programs.hyprland.enable = true; 
   #bluetooth
   services.blueman.enable = true; # For Blueman GUI (optional)
   hardware.bluetooth.enable = true;
@@ -63,9 +61,9 @@
     pulse.enable = true;
   };
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.alchemist = {
+  users.users.kynikoi = {
     isNormalUser = true;
-    description = "alchemist";
+    description = "kynikoi";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       #  thunderbird
@@ -73,18 +71,15 @@
   };
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
-  users.groups.libvirtd.members = ["alchemist"];
+  users.groups.libvirtd.members = ["kynikoi"];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   environment.sessionVariables = {
-    NH_FLAKE = "/home/alchemist/snowflake/";
+    NH_FLAKE = "/home/kynikoi/snowflake/";
   };
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
   ];
   services.displayManager.ly.enable = true;
   users.defaultUserShell = pkgs.bash;
