@@ -37,12 +37,6 @@
   services.blueman.enable = true; # For Blueman GUI (optional)
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us,us";
-    variant = ",dvorak";
-    options = "grp:alt_shift_toggle";
-  };
   # Configure XDG portal for screen sharing
   xdg.portal = {
     enable = true;
@@ -68,6 +62,11 @@
     packages = with pkgs; [
       #  thunderbird
     ];
+  };
+  services.xserver.xkb = {
+    layout = "us,us";
+    variant = ",dvorak";
+    options = "grp:alt_shift_toggle";
   };
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;

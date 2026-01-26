@@ -69,5 +69,8 @@
     tmux
     file
     libreoffice
+    emacs
+    tree-sitter
+    jetbrains.idea-ultimate
   ];
 }
