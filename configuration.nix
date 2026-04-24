@@ -42,6 +42,7 @@
     enable = true;
     wlr.enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    config.common.default = "*";
   };
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -79,6 +80,7 @@
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.jetbrains-mono
+    pkgs.nerd-fonts.iosevka
   ];
   services.displayManager.ly.enable = true;
   users.defaultUserShell = pkgs.bash;

@@ -73,10 +73,12 @@
 
   programs.git = {
     enable = true;
-    userEmail = "collinschacha@hotmail.com";
-    userName = "chachacollins";
-    extraConfig.init.defaultBranch = "main";
-    extraConfig.credential.helper = "store";
+    settings = {
+      user.email = "collinschacha@hotmail.com";
+      user.name = "chachacollins";
+      init.defaultBranch = "main";
+      credential.helper = "store";
+    };
   };
   gtk = {
     enable = true;

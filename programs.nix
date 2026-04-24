@@ -19,6 +19,7 @@
 
   environment.systemPackages = with pkgs; [
     vim-full
+    neovim
     dune_3
     ffmpeg_6
     qemu
@@ -71,6 +72,6 @@
     libreoffice
     emacs
     tree-sitter
-    jetbrains.idea-ultimate
+    opencode
   ];
 }
