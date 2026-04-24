@@ -25,6 +25,7 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+    ".bashrc".source = ./dot/.bashrc;
     ".zshrc".source = ./dot/.zshrc;
     ".wezterm.lua".source = ./dot/wezterm/wezterm.lua;
     ".config/i3/config".source = ./dot/i3/config;
