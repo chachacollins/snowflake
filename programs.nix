@@ -73,5 +73,6 @@
     emacs
     tree-sitter
     opencode
+    spotify
   ];
 }
