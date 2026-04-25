@@ -19,6 +19,7 @@
 
   environment.systemPackages = with pkgs; [
     vim-full
+    ripgrep
     neovim
     dune_3
     ffmpeg_6

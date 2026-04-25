@@ -21,9 +21,9 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
+    # Building this configuration will create a copy of 'dotfiles/screenrc' in
+    # the Nix store. Activating the configuration will then make '~/.screenrc' a
+    # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
     ".bashrc".source = ./dot/.bashrc;
     ".zshrc".source = ./dot/.zshrc;
@@ -42,7 +42,7 @@
     ".config/dunst/dunstrc".source = ./dot/dunst/dunstrc;
     ".config/starship.toml".source = ./dot/starship/starship.toml;
 
-    # # You can also set the file content immediately.
+    # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
