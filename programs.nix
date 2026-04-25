@@ -75,5 +75,6 @@
     tree-sitter
     opencode
     spotify
+    rlwrap
   ];
 }

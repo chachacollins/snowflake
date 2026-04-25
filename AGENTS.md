@@ -2,6 +2,9 @@
 
 When working on this Nix flake, agents must abide by the following laws:
 
+## 0. Project Overview
+This is a NixOS flake configuring a personal desktop system named "coven". All system packages and programs are defined in `programs.nix`.
+
 ## 1. Version Control
 Always commit your work to VCS with a great description of what you have done. Use meaningful commit messages that explain the *why* behind changes, not just the *what*.
 
@@ -22,3 +25,6 @@ Use the `nix` command-line tool for all Nix operations. Prefer:
 
 ## 5. Modular Configuration
 Favour modular configuration where possible. Reuse existing modules and options rather than reinventing the wheel. Keep configurations DRY by importing shared modules from `./configuration.nix` or splitting into logical small modules.
+
+## 6. Program Management
+When adding new system packages or programs, always add them to `programs.nix` rather than directly in `configuration.nix`.
