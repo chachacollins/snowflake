@@ -74,6 +74,7 @@
 
   programs.git = {
     enable = true;
+    signing.format = "openpgp";
     settings = {
       user.email = "collinschacha@hotmail.com";
       user.name = "chachacollins";
@@ -83,6 +84,7 @@
   };
   gtk = {
     enable = true;
+    gtk4.theme = config.gtk.theme;
     theme = {
       name = "Graphite";
       package = pkgs.andromeda-gtk-theme;

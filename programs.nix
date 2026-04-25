@@ -58,7 +58,7 @@
     wireplumber
     lxappearance
     vlc
-    xorg.setxkbmap
+    setxkbmap
     obsidian
     man-pages
     man-pages-posix
