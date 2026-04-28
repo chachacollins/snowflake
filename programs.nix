@@ -52,7 +52,6 @@
     eza
     clang-tools
     gcc
-    flameshot
     ly
     gtk3
     wireplumber
