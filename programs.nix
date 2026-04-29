@@ -75,5 +75,6 @@
     opencode
     spotify
     rlwrap
+    logseq
   ];
 }
