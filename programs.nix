@@ -17,6 +17,12 @@
     package = pkgs.mariadb;
   };
 
+  services.syncthing = {
+    enable = true;
+    user = "kynikoi";
+    dataDir = "/home/kynikoi";
+  };
+
   environment.systemPackages = with pkgs; [
     vim-full
     ripgrep
