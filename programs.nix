@@ -57,6 +57,7 @@
     killall
     eza
     clang-tools
+    cloc
     gcc
     ly
     gtk3
