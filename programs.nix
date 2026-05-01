@@ -83,5 +83,6 @@
     spotify
     rlwrap
     logseq
+    zed-editor
   ];
 }
