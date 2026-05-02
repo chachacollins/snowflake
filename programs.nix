@@ -76,9 +76,8 @@
     zathura
     tmux
     file
-    libreoffice
-    emacs
-    tree-sitter
+     libreoffice
+     tree-sitter
     opencode
     spotify
     rlwrap
