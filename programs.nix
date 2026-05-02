@@ -39,6 +39,7 @@
     rofi
     git
     gnumake
+    cmake
     gum
     mpv
     clang
