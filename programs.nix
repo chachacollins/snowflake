@@ -51,7 +51,8 @@
     fzf
     yazi
     xclip
-    go
+     go
+    erlang
     rustup
     polybar
     dunst
@@ -82,7 +83,5 @@
     opencode
     spotify
     rlwrap
-    logseq
-    zed-editor
   ];
 }
