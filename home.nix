@@ -20,8 +20,6 @@ in
 
   home.file = {
     ".bashrc".source = ./dot/.bashrc;
-    ".zshrc".source = ./dot/.zshrc;
-    ".wezterm.lua".source = ./dot/wezterm/wezterm.lua;
     ".config/i3/config".source = ./dot/i3/config;
     ".config/polybar" = {
       source = ./dot/polybar;
