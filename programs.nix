@@ -52,7 +52,7 @@
     yazi
     xclip
      go
-    erlang
+     fsharp
     rustup
     polybar
     dunst
