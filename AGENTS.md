@@ -9,7 +9,7 @@ This is a NixOS flake configuring a personal desktop system named "coven". All s
 Always commit your work to VCS with a great description of what you have done. Use meaningful commit messages that explain the *why* behind changes, not just the *what*.
 
 ## 2. Build Verification
-Make sure the derivation builds without any warnings or errors. This is a NixOS configuration, so use `nixos-rebuild switch --dry-run` or `nix build .#nixosConfigurations.coven.config.system.build.toplevel` to verify the configuration builds successfully.
+Make sure the derivation builds without any warnings or errors. This is a NixOS configuration, so use `nixos-rebuild switch --dry-run` or `nix build .#nixosConfigurations.coven.config.system.build.toplevel` to verify the configuration builds successfully. After a successful build, always commit your changes with a meaningful commit message.
 
 ## 3. Documentation
 Consult Nix documentation where necessary. When uncertain about module options, packages, or NixOS configuration, refer to:
