@@ -66,6 +66,7 @@
     wireplumber
     lxappearance
     vlc
+    obs-studio
     setxkbmap
     obsidian
     man-pages
