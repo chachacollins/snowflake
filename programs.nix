@@ -52,7 +52,7 @@
     yazi
     xclip
      go
-     fsharp
+     ocaml
     rustup
     polybar
     dunst
