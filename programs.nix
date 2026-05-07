@@ -55,6 +55,7 @@
       ocaml
       opam
      rustup
+     erlang
     polybar
     dunst
     killall
