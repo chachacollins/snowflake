@@ -15,3 +15,4 @@ export PATH="$PATH:~/.local/bin"
 bind '"\C-n": "tmux-sessionizer\C-m"'
 alias grep="grep --color=auto"
 alias vim="nvim"
+[ -f ~/env.sh ] && source ~/env.sh
