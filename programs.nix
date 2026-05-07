@@ -52,8 +52,9 @@
     yazi
     xclip
      go
-     ocaml
-    rustup
+      ocaml
+      opam
+     rustup
     polybar
     dunst
     killall
