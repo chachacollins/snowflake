@@ -51,12 +51,12 @@
     fzf
     yazi
     xclip
-     go
-      ocaml
-      opam
-     rustup
-     ruby
-     erlang
+      go
+      rustup
+      ruby
+      erlang
+      ghc
+      cabal-install
     polybar
     dunst
     killall
