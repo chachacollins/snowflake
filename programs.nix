@@ -90,5 +90,6 @@
     spotify
     rlwrap
     navi
+    ormolu
   ];
 }
