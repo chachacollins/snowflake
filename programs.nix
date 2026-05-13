@@ -57,6 +57,8 @@
       erlang
       ghc
       cabal-install
+      ghcid
+      hlint
     polybar
     dunst
     killall
