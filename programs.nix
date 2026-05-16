@@ -59,6 +59,7 @@
       cabal-install
       ghcid
       hlint
+      stack
     polybar
     dunst
     killall
