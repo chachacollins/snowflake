@@ -51,15 +51,15 @@
     fzf
     yazi
     xclip
-      go
-      rustup
-      ruby
-      erlang
-      ghc
-      cabal-install
-      ghcid
-      hlint
-      stack
+    go
+    rustup
+    ruby
+    erlang
+    ghc
+    cabal-install
+    ghcid
+    hlint
+    stack
     polybar
     dunst
     killall
@@ -85,12 +85,13 @@
     zathura
     tmux
     file
-     libreoffice
-     tree-sitter
+    libreoffice
+    tree-sitter
     opencode
     spotify
     rlwrap
     navi
     ormolu
+    code-cursor
   ];
 }
