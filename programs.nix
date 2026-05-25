@@ -93,5 +93,6 @@
     navi
     ormolu
     code-cursor
+    texlivePackages.xargs
   ];
 }
