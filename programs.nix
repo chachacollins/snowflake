@@ -53,7 +53,6 @@
     xclip
     go
     rustup
-    ruby
     erlang
     ghc
     cabal-install
@@ -81,7 +80,6 @@
     bluetui
     gdb
     nh
-    nodejs
     zathura
     tmux
     file
