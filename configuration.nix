@@ -74,6 +74,7 @@
   nixpkgs.config.allowUnfree = true;
   environment.sessionVariables = {
     NH_FLAKE = "/home/kynikoi/snowflake/";
+    QTWEBENGINE_CHROMIUM_FLAGS = "--no-sandbox";
   };
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
