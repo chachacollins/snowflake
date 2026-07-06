@@ -71,6 +71,7 @@
     hlint
     stack
     polybar
+    qutebrowser
     dunst
     killall
     eza
