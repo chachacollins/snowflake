@@ -104,5 +104,6 @@
     ormolu
     code-cursor
     texlivePackages.xargs
+    openvpn
   ];
 }
