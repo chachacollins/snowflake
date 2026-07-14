@@ -1,18 +1,10 @@
 #!/bin/sh
-# Get default sink volume and mute status
-VOLUME=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}')
-MUTED=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -oE '\[MUTED\]')
+VOLUME=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
+MUTED=$(echo "$VOLUME" | grep -oE '\[MUTED\]')
+PERCENT=$(echo "$VOLUME" | grep -oE '[0-9]+(\.[0-9]+)?' | head -1)
 
-# Set icons based on volume level
-if [[ -n "$MUTED" ]]; then
-    ICON=""  # Muted icon
-    VOLUME="Muted"
-elif (( $(echo "$VOLUME < 30" ) )); then
-    ICON=""  # Low volume
-elif (( $(echo "$VOLUME < 70" ) )); then
-    ICON=""  # Medium volume
+if [ -n "$MUTED" ]; then
+    echo "  muted"
 else
-    ICON=""  # High volume
+    echo " $PERCENT%"
 fi
-
-echo "Vol: $VOLUME%"
