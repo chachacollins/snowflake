@@ -105,5 +105,8 @@
     code-cursor
     texlivePackages.xargs
     openvpn
+    wezterm
+    kitty
+    boomer
   ];
 }
