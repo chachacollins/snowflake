@@ -67,6 +67,7 @@ bindsym $mod+c exec firefox
 bindsym $mod+shift+s exec flameshot gui
 bindsym $mod+n exec obsidian
 bindsym $mod+b exec qutebrowser
+bindsym $mod+z exec boomer
 
 # kill focused window
 bindsym $mod+q kill
