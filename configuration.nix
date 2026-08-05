@@ -26,6 +26,12 @@
   #power management
   services.power-profiles-daemon.enable = false;
   services.tlp.enable = true;
+  services.tlp.settings = {
+    CPU_SCALING_GOVERNOR_ON_AC = "performance";
+    CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+    CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
+    CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+  };
   # Enable the X11 windowing system.
   services.xserver = {
       enable = true;
@@ -88,6 +94,13 @@
     automatic = true;
     dates = "weekly";
   };
+  hardware.graphics = {
+    enable = true;
+  };
+  hardware.graphics.extraPackages = with pkgs; [
+    intel-media-driver # for newer Intel iGPUs (Broadwell+)
+# or vaapiIntel for older
+  ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -116,4 +129,5 @@
   system.stateVersion = "24.11"; # Did you read the comment?
   # Disable GTK theme management
   documentation.man.cache.enable = true;
+
 }
