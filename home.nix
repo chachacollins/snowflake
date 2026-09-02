@@ -53,10 +53,5 @@ in
   };
   gtk = {
     enable = true;
-    gtk4.theme = config.gtk.theme;
-    theme = {
-      name = "Graphite";
-      package = pkgs.andromeda-gtk-theme;
-    };
   };
 }
