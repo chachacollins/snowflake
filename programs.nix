@@ -99,11 +99,11 @@
     tree-sitter
     opencode
     spotify
+    android-studio
     rlwrap
     navi
     ormolu
     code-cursor
     texlivePackages.xargs
-    openvpn
   ];
 }
