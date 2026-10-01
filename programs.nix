@@ -102,6 +102,7 @@
     libreoffice
     tree-sitter
     opencode
+    google-chrome
     spotify
     android-studio
     wireguard-tools
