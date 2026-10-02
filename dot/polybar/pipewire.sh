@@ -6,5 +6,5 @@ PERCENT=$(echo "$VOLUME" | grep -oE '[0-9]+(\.[0-9]+)?' | head -1)
 if [ -n "$MUTED" ]; then
     echo "  muted"
 else
-    echo " $PERCENT%"
+    echo " "
 fi
