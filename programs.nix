@@ -34,6 +34,10 @@
     dataDir = "/home/kynikoi";
   };
 
+  services.tailscale = {
+    enable = true;
+  };
+
   environment.systemPackages = with pkgs; [
     vim-full
     ripgrep
@@ -98,7 +102,11 @@
     libreoffice
     tree-sitter
     opencode
+    google-chrome
     spotify
+    android-studio
+    wireguard-tools
+    tailscale
     rlwrap
     navi
     ormolu
