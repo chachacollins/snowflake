@@ -12,30 +12,11 @@
   programs.vim.enable = true;
   programs.virt-manager.enable = true;
   programs.firefox.enable = true;
-  services.mysql = {
-    enable = true;
-    package = pkgs.mariadb;
-  };
-
-  services.postgresql = {
-    enable = true;
-    package = pkgs.postgresql_16;
-    enableTCPIP = true;
-    authentication = pkgs.lib.mkOverride 10 ''
-      local all all trust
-      host  all all 127.0.0.1/32 trust
-      host  all all ::1/128 trust
-    '';
-  };
 
   services.syncthing = {
     enable = true;
     user = "kynikoi";
     dataDir = "/home/kynikoi";
-  };
-
-  services.tailscale = {
-    enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -55,7 +36,6 @@
     git
     gnumake
     cmake
-    gum
     mpv
     clang
     jq
@@ -69,11 +49,6 @@
     go
     rustup
     erlang
-    ghc
-    cabal-install
-    ghcid
-    hlint
-    stack
     polybar
     qutebrowser
     dunst
@@ -102,19 +77,10 @@
     libreoffice
     tree-sitter
     opencode
-    google-chrome
     spotify
     android-studio
     wireguard-tools
-    tailscale
     rlwrap
     navi
-    ormolu
-    code-cursor
-    texlivePackages.xargs
-    openvpn
-    wezterm
-    kitty
-    boomer
   ];
 }
