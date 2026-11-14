@@ -48,7 +48,6 @@
     xclip
     go
     rustup
-    erlang
     polybar
     qutebrowser
     dunst
@@ -82,5 +81,6 @@
     wireguard-tools
     rlwrap
     navi
+    erlang
   ];
 }
