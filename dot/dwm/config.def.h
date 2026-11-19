@@ -1,5 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
+#include <X11/XF86keysym.h>
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -60,11 +62,19 @@ static const Layout layouts[] = {
 static char dmenumon[8]; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
+static const char *flameshotcmd[]     = { "flameshot", "gui", NULL };
+static const char *volumeupcmd[]      = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "10%+", NULL };
+static const char *volumedowncmd[]    = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "10%-", NULL };
+static const char *mutevolcmd[]       = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
+static const char *mutemiccmd[]       = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SOURCE@", "toggle", NULL };
+static const char *brightnessupcmd[]  = { "brightnessctl", "set", "+5%", NULL };
+static const char *brightnessdowncmd[] = { "brightnessctl", "set", "5%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = flameshotcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -86,6 +96,12 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ 0,                            XF86XK_AudioRaiseVolume,  spawn, {.v = volumeupcmd } },
+	{ 0,                            XF86XK_AudioLowerVolume,  spawn, {.v = volumedowncmd } },
+	{ 0,                            XF86XK_AudioMute,         spawn, {.v = mutevolcmd } },
+	{ 0,                            XF86XK_AudioMicMute,      spawn, {.v = mutemiccmd } },
+	{ 0,                            XF86XK_MonBrightnessUp,   spawn, {.v = brightnessupcmd } },
+	{ 0,                            XF86XK_MonBrightnessDown, spawn, {.v = brightnessdowncmd } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
