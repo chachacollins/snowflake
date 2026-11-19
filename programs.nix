@@ -12,6 +12,7 @@
   programs.vim.enable = true;
   programs.virt-manager.enable = true;
   programs.firefox.enable = true;
+  programs.direnv.enable = true;
 
   services.syncthing = {
     enable = true;
@@ -82,5 +83,6 @@
     rlwrap
     navi
     erlang
+    nix-direnv
   ];
 }

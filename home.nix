@@ -39,6 +39,17 @@ in
     XKBOPTIONS = "caps:escape";
   };
 
+  home.packages = with pkgs; [
+    (pkgs.st.overrideAttrs (_: {
+      src = ./dot/st;
+      patches = [ ];
+    }))
+    (pkgs.dmenu.overrideAttrs (_: {
+      src = ./dot/dmenu;
+      patches = [ ];
+    }))
+  ];
+
   programs.home-manager.enable = true;
 
   programs.git = {

@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Nerd Font:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Iosevka Nerd Font:pixelsize=31:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -121,7 +121,7 @@ static const char *colorname[] = {
 	"#cccccc",
 	"#555555",
 	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+	"#181818", /* default background colour */
 };
 
 

@@ -19,6 +19,7 @@
   networking.networkmanager.enable = true;
   #flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.substituters = [ "https://aseipp-nix-cache.global.ssl.fastly.net" ];
   # Set your time zone.
   time.timeZone = "Africa/Nairobi";
   # Select internationalisation properties.
@@ -33,12 +34,19 @@
     CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
   };
   # Enable the X11 windowing system.
+  services.xserver.xkb.options = "caps:escape"; 
   services.xserver = {
       enable = true;
       autoRepeatDelay = 200;
       autoRepeatInterval = 35;
   };
   services.xserver.windowManager.i3.enable = true;
+  services.xserver.windowManager.dwm = {
+    enable = true;
+    package = pkgs.dwm.overrideAttrs {
+      src = ./dot/dwm;
+    };
+  };
   #bluetooth
   services.blueman.enable = true; # For Blueman GUI (optional)
   hardware.bluetooth.enable = true;
